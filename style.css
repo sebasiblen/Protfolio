@@ -1,0 +1,421 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+:root {
+    --color-fuente1: #FFF;
+    --color-fuente2: #24d366;
+    --fuente-tipo: "Gruppo", sans-serif;
+    --color-background: #000;
+}
+
+
+body {
+    background: var(--color-background);
+    font-family: var(--fuente-tipo);
+    color: var(--color-fuente1);
+}
+
+
+.linea {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 5px;
+    height: 500%;
+    background:  linear-gradient(180deg, rgba(255,255,255,1)15%,
+    rgb(207, 6, 164)40%,rgb(65, 146, 223)60%,rgb(162, 0, 255)85%,
+    rgb(162, 0, 255)75%,rgba(255,255,255,0.7)100%);
+    z-index: -3;
+}
+
+
+header {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    background-image: url('imagenes/v.jpg');
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin-bottom: 22%;
+    animation: fondo-animacion 10s infinite alternate;
+    outline: 2px solid rgba(255, 255, 255, 0.95);
+}
+
+
+nav{
+    width: 100%;
+    height: 8%;
+    display: flex;
+    position: fixed;
+    z-index: 2;
+}
+
+nav > ul {
+    width: 100%;
+    height: 100%;
+    padding-right: 5px;
+    background: linear-gradient(90deg,
+     transparent 0%, rgba(0,0,0,0.5) 45%);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+nav > ul > li {
+    width: 10%;
+    height: 100%;
+    list-style-type: none;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 1%; 
+}
+nav > ul > li:hover {
+    background: rgba(255, 255, 255,.4);
+    transition: ease .2s;
+    border-top: 2px solid #FFF;
+}
+nav > ul > li > a {
+    text-decoration: none;
+    color: var(--color-fuente1);
+}
+
+
+.nombre {
+    width: 40%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.548);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(4.9px);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.nombre h2{
+    font-size: 30px;
+}
+.nombre h4 {
+    font-family: 'Segoe UI';
+    font-size: 13px;
+    text-align: center;
+    letter-spacing: 6px;
+}
+.foto {
+    width: 45%;
+    border: 6px solid #FFF;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: red;
+    clip-path: circle(230px at 10px 10px);
+}
+.foto img {
+    width: 100%;
+    position: center;
+}
+
+
+
+main > section {
+    margin: auto auto 20% auto;
+    position: relative;
+    height: 100vh;
+    background-attachment: fixed;
+}
+
+
+.descripcion {
+    width: 50%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 1);
+    padding: 5%;
+    overflow-y: none;
+    position: absolute;
+}
+
+
+h1 {
+    width: 50%;
+    background-color: rgba(0, 0, 0, 0.80);
+    text-align: center;
+    padding: 2%;
+    position: absolute;
+}
+
+
+
+#sobremi {
+    width: 90%;
+    background-image: url('imagenes/h.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+
+    background-color: rgba(0, 0, 0, 0.856);
+    outline: 1.2px solid rgba(255, 255, 255, 0.95);
+    box-shadow: 0 0 17px 4px rgb(207, 6, 164),
+                0 0 28px 5px rgb(207, 6, 164),
+                0 0 86px 6px rgb(207, 6, 164);
+
+    background-blend-mode: hard-light;
+    animation: fondo-animacion 10s infinite alternate;
+}
+#sobremi h1 {
+    top: 0;
+    right: 0;
+}
+
+
+
+#formacion {
+    width: 100%;
+    background-image: url('imagenes/es.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+
+    background-color: rgba(7, 7, 7, 0.778);
+    background-blend-mode: lighten;
+    outline: 1.2px solid rgba(255, 255, 255, 0.95);
+    box-shadow: 0 0 17px 4px rgb(122, 187, 248),
+                0 0 28px 5px rgb(65, 146, 223),
+                0 0 86px 6px rgb(27, 115, 197);
+    animation: fondo-animacion 60s infinite alternate-reverse;  
+}
+
+#formacion > .descripcion {
+   right: 0;
+   top: 0;
+}
+
+#formacion > .descripcion .boton {
+    width: 192px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20% auto auto auto;
+    background-color: var(--color-background);  
+
+}
+
+#formacion > .descripcion .boton a{
+    color: aqua;
+}
+
+#formacion > .descripcion .boton a:hover{
+    color: #000;
+    background-color: aqua;
+}
+
+#formacion > .descripcion .boton a:hover span:nth-child(1){
+    background: linear-gradient(90deg , transparent, aqua) ;
+}
+#formacion > .descripcion .boton a:hover span:nth-child(3){
+    background: linear-gradient(90deg , aqua,transparent) ;
+}
+#formacion > .descripcion .boton a:hover span:nth-child(2){
+    background: linear-gradient(180deg , transparent, aqua) ;
+}
+#formacion > .descripcion .boton a:hover span:nth-child(4){
+    background: linear-gradient(18deg , aqua, transparent) ;
+}
+
+
+#proyectos {
+    width: 80%;
+    height: 100vh;
+    background: rgb(162, 0, 255);
+    background-blend-mode: hard-light;
+    background-image: url('imagenes/spin.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    background-attachment: fixed;
+    border-radius: 25px;
+    filter: drop-shadow(0 0 20px #2a0344)
+    drop-shadow(0 0 20px #240263);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid rgb(162, 0, 255);
+}
+#proyectos h1 {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    border-radius: 25px;
+}
+#proyectos .descripcion {
+    width: 100%;
+    height: 50%;
+    overflow-y: unset; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#proyectos .descripcion p{
+    margin-bottom: 10px;
+}
+.boton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.boton a {
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    color: var(--color-fuente2);
+    text-decoration: none;
+    font-size: 20px;
+    overflow: hidden;
+    transition: .5s;
+}
+.boton a:hover{
+    background: var(--color-fuente2);
+    color: #000;
+    transition-delay: .7s;
+}
+.boton a span{
+    display: block;
+    position: absolute;
+}
+.boton a span:nth-child(1){
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, var(--color-fuente2));
+}
+.boton a:hover span:nth-child(1){
+    left: 100%;
+    transition: 1s;
+}
+.boton a span:nth-child(3){
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, var(--color-fuente2),transparent);
+}
+.boton a:hover span:nth-child(3){
+    right: 100%;
+    transition: 1s;
+}
+.boton a span:nth-child(2){
+    left: 0;
+    top: -100%;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, var(--color-fuente2));
+}
+.boton a:hover span:nth-child(2){
+    top: 100%;
+    transition: 1s;
+}
+.boton a span:nth-child(4){
+    right: 0;
+    bottom: -100%;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, var(--color-fuente2),transparent);
+}
+.boton a:hover span:nth-child(4){
+    bottom: 100%;
+    transition: 1s;
+}
+
+
+footer {
+    width: 100%;
+    position: relative;
+    background-color: rgb(15, 15, 15);
+    border-top: 2px solid #FFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+}
+
+footer #contactame .iconos {
+    background-color: rgb(15, 15, 15);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    gap: 50px;
+}
+footer .iconos li {
+    position: relative;
+    list-style-type: none;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 10px var(--clr),
+    0 0 20px var(--clr);
+}
+footer .iconos li a{
+    position: relative;
+    text-decoration: none;
+    color: var(--clr);
+    font-size: 25px;
+    z-index: 2;
+}
+footer .iconos li:hover a{
+    font-size: 30px;
+    filter: drop-shadow(0 0 20px var(--clr))
+    drop-shadow(0 0 40px rgb(15, 15, 15))
+    drop-shadow(0 0 60px var(--clr));
+    transition: .2s;
+}
+footer .iconos li:before {
+    content: '';
+    position: absolute;
+    inset: 20px;
+    box-shadow: 0 0 0 10px var(--clr),
+    0 0 0 20px rgb(15, 15, 15),
+    0 0 0 22px var(--clr);
+    transition: 0.5s;
+}
+footer .iconos li:hover:before {
+    inset: 8px;
+}
+footer .iconos li:after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-color: rgb(15, 15, 15);
+    transform: rotate(45deg);
+}
+
+@keyframes fondo-animacion {
+    
+    0%{
+        background-position-x: 0%;
+        background-position-y: 100%;
+    }
+
+    50% {
+        background-position-x: 100%;
+        background-position-y: 50%;
+    }
+
+    100%{
+        background-position-x: 0%;
+        background-position-y: 0%;
+    }
+}

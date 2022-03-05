@@ -115,13 +115,11 @@ nav > ul > li > a {
     align-items: center;
     justify-content: center;
     background-color: red;
-    clip-path: circle(230px at 10px 10px);
 }
 .foto img {
     width: 100%;
     position: center;
 }
-
 
 
 main > section {
@@ -197,8 +195,7 @@ h1 {
 }
 
 #formacion > .descripcion .boton {
-    width: 192px;
-    height: 48px;
+    width: max-content;
     display: flex;
     justify-content: center;
     align-items: center;

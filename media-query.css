@@ -1,54 +1,39 @@
-@media screen and (max-width: 330px) {
-
-    body {
-        min-width: 250px;
-    }
-
+@media only screen and (max-width: 425px) {
     .linea {
         height: 400%;
     }
-
     header {
         background-size: 300%;
     }
-
     nav {
         width: 100%;
     }
-
     nav ul {
         display: flex;
         align-items: center;
         justify-content: center;
     }
-
     nav ul li {
         background-image: url("iconos/home.svg");
         background-repeat: no-repeat;
         background-size: 50%;
         background-position: center;
     }
-
     nav ul li:nth-child(2) {
         background-image: url("iconos/user-plus.svg");
     }
-
     nav ul li:nth-child(3) {
         background-image: url("iconos/book.svg");
     }
-
     nav ul li:nth-child(4) {
         background-image: url("iconos/briefcase.svg");
     }
-
     nav ul li:nth-child(5) {
         background-image: url("iconos/message-circle.svg");
     }
-
     nav ul li a {
         font-size: 0px;
     }
-
     @keyframes fondo-animacion {
 
         0% {
@@ -66,29 +51,24 @@
             background-position-y: 70%;
         }
     }
-
     .nombre {
         width: 80%;
         height: 80%;
         margin: auto;
     }
-
     .foto {
         width: 90%;
     }
-
     #sobremi {
         display: flex;
         justify-content: center;
         align-items: center;
     }
-
     h1 {
         width: 100%;
         z-index: 1;
         background-color: black;
     }
-
     .descripcion {
         width: 100%;
         height: 100%;
@@ -99,286 +79,40 @@
         bottom: 0;
         position: relative;
     }
-
     #proyectos {
         border-radius: 0;
         background-size: 600%;
         height: 80vh;
     }
-
     #proyectos .descripcion {
         height: 100%;
     }
-
     .iconos {
         flex-direction: column;
     }
 }
 
-@media screen and (max-width: 375px) {
-
+@media only screen and (max-width: 768px) {
+    
     body {
-        min-width: 331px;
+        min-width: 426px;
     }
-
-    .linea {
-        height: 400%;
-    }
-
-    header {
-        background-size: 300%;
-    }
-
-    nav {
-        width: 100%;
-    }
-
-    nav ul {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    nav ul li {
-        background-image: url("iconos/home.svg");
-        background-repeat: no-repeat;
-        background-size: 50%;
-        background-position: center;
-    }
-
-    nav ul li:nth-child(2) {
-        background-image: url("iconos/user-plus.svg");
-    }
-
-    nav ul li:nth-child(3) {
-        background-image: url("iconos/book.svg");
-    }
-
-    nav ul li:nth-child(4) {
-        background-image: url("iconos/briefcase.svg");
-    }
-
-    nav ul li:nth-child(5) {
-        background-image: url("iconos/message-circle.svg");
-    }
-
-    nav ul li a {
-        font-size: 0px;
-    }
-
-    @keyframes fondo-animacion {
-
-        0% {
-            background-position-x: 30%;
-            background-position-y: 30%;
-        }
-
-        50% {
-            background-position-x: 70%;
-            background-position-y: 50%;
-        }
-
-        100% {
-            background-position-x: 50%;
-            background-position-y: 70%;
-        }
-    }
-
-    .nombre {
-        width: 80%;
-        height: 80%;
-        margin: auto;
-    }
-
-    .foto {
-        width: 90%;
-    }
-
-    #sobremi {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    h1 {
-        width: 100%;
-        z-index: 1;
-        background-color: black;
-    }
-
-    .descripcion {
-        width: 100%;
-        height: 100%;
-        padding: 15% 5%;
-        background: rgba(0, 0, 0, 0.5);
-        overflow-y: scroll;
-        left: 0;
-        bottom: 0;
-        position: relative;
-    }
-
-    #proyectos {
-        border-radius: 0;
-        background-size: 600%;
-        height: 80vh;
-    }
-
-    #proyectos .descripcion {
-        height: 100%;
-    }
-
-    .iconos {
-        flex-direction: column;
-    }
-}
-
-@media screen and (max-width: 425px) {
-
-    body {
-        min-width: 376px;
-    }
-
-    .linea {
-        height: 400%;
-    }
-
-    header {
-        background-size: 300%;
-    }
-
-    nav {
-        width: 100%;
-    }
-
-    nav ul {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    nav ul li {
-        background-image: url("iconos/home.svg");
-        background-repeat: no-repeat;
-        background-size: 50%;
-        background-position: center;
-    }
-
-    nav ul li:nth-child(2) {
-        background-image: url("iconos/user-plus.svg");
-    }
-
-    nav ul li:nth-child(3) {
-        background-image: url("iconos/book.svg");
-    }
-
-    nav ul li:nth-child(4) {
-        background-image: url("iconos/briefcase.svg");
-    }
-
-    nav ul li:nth-child(5) {
-        background-image: url("iconos/message-circle.svg");
-    }
-
-    nav ul li a {
-        font-size: 0px;
-    }
-
-    @keyframes fondo-animacion {
-
-        0% {
-            background-position-x: 30%;
-            background-position-y: 30%;
-        }
-
-        50% {
-            background-position-x: 70%;
-            background-position-y: 50%;
-        }
-
-        100% {
-            background-position-x: 50%;
-            background-position-y: 70%;
-        }
-    }
-
-    .nombre {
-        width: 80%;
-        height: 80%;
-        margin: auto;
-    }
-
-    .foto {
-        width: 90%;
-    }
-
-    #sobremi {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    h1 {
-        width: 100%;
-        z-index: 1;
-        background-color: black;
-    }
-
-    .descripcion {
-        width: 100%;
-        height: 100%;
-        padding: 15% 5%;
-        background: rgba(0, 0, 0, 0.5);
-        overflow-y: scroll;
-        left: 0;
-        bottom: 0;
-        position: relative;
-    }
-
-    #proyectos {
-        border-radius: 0;
-        background-size: 600%;
-        height: 80vh;
-    }
-
-    #proyectos .descripcion {
-        height: 100%;
-    }
-
-    .iconos {
-        flex-direction: column;
-    }
-}
-
-@media screen and (max-width: 768px) {
-
-    body {
-        min-width: 460px;
-    }
-
-    .linea {
-        height: 400%;
-    }
-
     header {
         background-size: 300%;
         display: flex;
         justify-content: center;
     }
-
     nav {
         width: 100%;
     }
-
     nav ul {
         display: flex;
         align-items: center;
         justify-content: space-evenly;
     }
-
     nav ul li a {
         font-size: 12px;
     }
-
     .nombre {
         width: 60%;
         height: 100%;
@@ -387,34 +121,13 @@
         top: 0;
         left: 0;
     }
-
-    @keyframes fondo-animacion {
-
-        0% {
-            background-position-x: 30%;
-            background-position-y: 30%;
-        }
-
-        50% {
-            background-position-x: 70%;
-            background-position-y: 50%;
-        }
-
-        100% {
-            background-position-x: 50%;
-            background-position-y: 70%;
-        }
-    }
-
     .descripcion {
         overflow-y: scroll;
         background-color: rgba(0, 0, 0, 0.5);
     }
-
     .foto {
         width: 60%;
     }
-
     #sobremi,
     #proyectos {
         background-size: 300%;
@@ -422,7 +135,7 @@
 
 }
 
-@media screen and (max-width: 1024px) {
+@media only screen and (max-width: 1024px) {
 
     body {
         min-width: 769px;
@@ -495,7 +208,7 @@
 
 }
 
-@media screen and (max-width: 1440px) {
+@media only screen and (max-width: 1440px) {
 
     body {
         min-width: 1025px;
@@ -568,3 +281,4 @@
     }
 
 }
+*/

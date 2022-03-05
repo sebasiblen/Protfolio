@@ -94,6 +94,10 @@
 
 @media only screen and (min-width:426px) and (max-width: 768px) {
     
+    .linea {
+        height: 400%;
+    }
+    
     header {
         background-size: 300%;
         display: flex;

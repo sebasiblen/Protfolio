@@ -60,7 +60,7 @@ nav > ul {
     height: 100%;
     padding-right: 5px;
     background: linear-gradient(90deg,
-     transparent 0%, rgba(0,0,0,0.5) 45%);
+     transparent 0%, rgba(0,0,0,1) 45%);
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -347,8 +347,13 @@ footer {
     align-items: center;
     justify-content: center;
     padding: 50px;
+    flex-direction: column;
 }
-
+footer #contactame h1 {
+    background-color: rgb(15, 15, 15);
+    z-index: 1;
+    position: relative;
+}
 footer #contactame .iconos {
     background-color: rgb(15, 15, 15);
     display: flex;
@@ -356,6 +361,7 @@ footer #contactame .iconos {
     justify-content: center;
     position: relative;
     gap: 50px;
+    padding: 80px 0 0 0;
 }
 footer .iconos li {
     position: relative;
@@ -365,8 +371,9 @@ footer .iconos li {
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 0 0 10px var(--clr),
-    0 0 20px var(--clr);
+    /*box-shadow: 0 0 10px var(--clr),
+    0 0 20px var(--clr);*/
+    border-radius: 30px;
 }
 footer .iconos li a{
     position: relative;
@@ -390,6 +397,7 @@ footer .iconos li:before {
     0 0 0 20px rgb(15, 15, 15),
     0 0 0 22px var(--clr);
     transition: 0.5s;
+    border-radius: 30px;
 }
 footer .iconos li:hover:before {
     inset: 8px;
@@ -399,7 +407,15 @@ footer .iconos li:after {
     position: absolute;
     inset: 0;
     background-color: rgb(15, 15, 15);
-    transform: rotate(45deg);
+    /*transform: rotate(45deg);*/
+    border-radius: 50px 20px;
+}
+footer h6 {
+    margin: 60px 0 0px 0;
+    letter-spacing: 2px;
+}
+footer h6 > i{
+    color: red;
 }
 
 @keyframes fondo-animacion {

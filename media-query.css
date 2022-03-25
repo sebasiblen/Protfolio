@@ -255,8 +255,9 @@
     }
 
     #sobremi,
+    #formacion,
     #proyectos {
-        background-size: 300%;
+        background-size: 100%;
     }
 
 }

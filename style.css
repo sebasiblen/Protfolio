@@ -4,7 +4,6 @@
     box-sizing: border-box;
 }
 
-
 :root {
     --color-fuente1: #FFF;
     --color-fuente2: #24d366;
@@ -26,9 +25,9 @@ body {
     left: 50%;
     width: 5px;
     height: 500%;
-    background:  linear-gradient(180deg, rgba(255,255,255,1)15%,
-    rgb(207, 6, 164)40%,rgb(65, 146, 223)60%,rgb(162, 0, 255)85%,
-    rgb(162, 0, 255)75%,rgba(255,255,255,0.7)100%);
+    background:  linear-gradient(180deg, rgba(255,255,255,1) 15%,
+    rgb(207, 6, 164) 40%,rgb(65, 146, 223) 60%,rgb(162, 0, 255) 85%,
+    rgb(162, 0, 255) 75%,rgba(255,255,255,0.7) 100%);
     z-index: -3;
 }
 
@@ -69,17 +68,22 @@ nav > ul > li {
     width: 10%;
     height: 100%;
     list-style-type: none;
-    
     display: flex;
     justify-content: center;
     align-items: center;
     margin-left: 1%; 
 }
+
+nav > ul > li > i{
+    margin: 5px;
+}
+
 nav > ul > li:hover {
     background: rgba(255, 255, 255,.4);
     transition: ease .2s;
     border-top: 2px solid #FFF;
 }
+
 nav > ul > li > a {
     text-decoration: none;
     color: var(--color-fuente1);
